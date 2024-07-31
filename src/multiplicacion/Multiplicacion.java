@@ -1,20 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package multiplicacion;
 
-/**
- *
- * @author MINEDUCYT
- */
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Multiplicacion {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner scan = new Scanner(System.in);
+        int res = 0;
+
+        try {
+
+            System.out.println("=================================================== <[Entrada]> ==================================================");
+            System.out.print("Ingrese el numero para generar la escala: ");
+            int num = scan.nextInt();
+
+            System.out.print("Ingrese hasta que numero quiere la tabla: ");
+            int mul = scan.nextInt();
+            
+            System.out.println("=================================================== <[Tabla]> ===================================================");
+            
+            for (int i = 1; i <= mul; i++) {
+                res = res + num;
+                System.out.println(num + " X " + i + " = " + res);
+            }
+
+            System.out.println("==================================================================================================================");
+            
+        } catch (InputMismatchException e) {
+            System.out.println("=================================================== <[Error]> ====================================================");
+            System.err.println("Error, solo se admiten numeros");
+            System.out.println("==================================================================================================================");
+        }
+
     }
-    
+
 }
