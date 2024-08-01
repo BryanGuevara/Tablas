@@ -21,7 +21,7 @@ El programa **Multiplicación** es una sencilla aplicación de consola en Java q
 
 ```plaintext
 =================================================== <[Entrada]> ==================================================
-Ingrese el numero para generar la escala: 5
+Ingrese el numero para generar la tabla: 5
 Ingrese hasta que numero quiere la tabla: 10
 =================================================== <[Tabla]> ===================================================
 5 X 1 = 5

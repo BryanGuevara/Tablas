@@ -12,7 +12,7 @@ public class Multiplicacion {
         try {
 
             System.out.println("=================================================== <[Entrada]> ==================================================");
-            System.out.print("Ingrese el numero para generar la escala: ");
+            System.out.print("Ingrese el numero para generar la tabla: ");
             int num = scan.nextInt();
 
             System.out.print("Ingrese hasta que numero quiere la tabla: ");
